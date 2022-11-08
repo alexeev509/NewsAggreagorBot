@@ -7,8 +7,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class Bot extends TelegramLongPollingCommandBot {
 
-    //private static final String TOKEN = "5421373004:AAHDCYUAxc_6GSTOcPfUkBsFLQt3HzOElzw";
-    //private static final String BOT_USER_NAME = "NewsAggregatorReal_bot";
+    private static final String TOKEN = "5421373004:AAHDCYUAxc_6GSTOcPfUkBsFLQt3HzOElzw";
+    private static final String BOT_USER_NAME = "NewsAggregatorReal_bot";
 
     public Bot() {
         super();
@@ -17,13 +17,13 @@ public class Bot extends TelegramLongPollingCommandBot {
 
     @Override
     public String getBotUsername() {
-        return System.getenv("username");
+        return TOKEN;//System.getenv("username");
         //return BOT_USER_NAME;
     }
 
     @Override
     public String getBotToken() {
-        return System.getenv("token");
+        return BOT_USER_NAME;//System.getenv("token");
         //return TOKEN;
     }
 
