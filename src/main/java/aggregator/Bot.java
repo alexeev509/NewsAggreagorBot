@@ -12,7 +12,7 @@ public class Bot extends TelegramLongPollingCommandBot {
 
     public Bot() {
         super();
-        //register(new aggregator.StartCommand("start", "Старт"));
+        register(new StartCommand("start", "Старт"));
     }
 
     @Override
