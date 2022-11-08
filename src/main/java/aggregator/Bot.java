@@ -17,13 +17,13 @@ public class Bot extends TelegramLongPollingCommandBot {
 
     @Override
     public String getBotUsername() {
-        return TOKEN;//System.getenv("username");
+        return BOT_USER_NAME;//System.getenv("username");
         //return BOT_USER_NAME;
     }
 
     @Override
     public String getBotToken() {
-        return BOT_USER_NAME;//System.getenv("token");
+        return TOKEN;//System.getenv("token");
         //return TOKEN;
     }
 
